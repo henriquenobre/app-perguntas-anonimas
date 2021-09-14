@@ -25,8 +25,10 @@ html{
 
 body{
     display: flex;
+    
+    justify-content: center;
     height: 100vh;
-    background: var(--light-blue);
+    background: var(--background);
 }
 
 body, button, input, textarea{
@@ -52,12 +54,12 @@ body, button, input, textarea{
 }
 
 /* Input and butons */
-input, button, .button{
+input, button > a, button, .button{
     border-radius: .8rem;
     height: 5rem;
 }
 
-button, .button{
+button > a, button, .button{
     font-family: Poppins,sans-serif;
     font-weight: 500;
     line-height: 0;
@@ -78,7 +80,7 @@ button:hover, .button:hover{
     filter: brightness(1.2);
 }
 
-button > img 
+button > a > img, 
 .button > img{
     margin-right: 1rem;
     width: 2rem;
