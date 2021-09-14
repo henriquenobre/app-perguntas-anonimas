@@ -101,8 +101,15 @@
     align-items: center;
 }
 
+.question-wrapper .question-content .user{
+    background: var(--blue);
+    clip-path: circle();
+    padding: 1.4rem;
+}
+
 .question-wrapper .question-content p{
     margin-left: 1.6rem;
+    word-break: break-word;
 }
 
 .question-wrapper .actions{
@@ -122,4 +129,12 @@
 
 .question-wrapper .actions a:nth-child(2){
     margin-left: 2.4rem;
+}
+
+.question-wrapper.read{
+    background: var(--grey-mediun);
+}
+
+.question-wrapper.read .question-content .user{
+    background: var(--grey-blue);
 }

@@ -10,6 +10,7 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/room.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <!--Fontes  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,7 +68,7 @@
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="/assets/Avatar.svg" alt="">
+                                <img src="/assets/userintern.svg" alt="">
                             </div>
                             <div class="question">
                                 <p>Qual a diferença entre const let e var js?</p>
@@ -89,7 +90,7 @@
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="/assets/Avatar.svg" alt="">
+                                <img src="/assets/userintern.svg" alt="">
                             </div>
                             <div class="question">
                                 <p>QO que Java script?</p>
@@ -108,20 +109,17 @@
 
                     </div>
 
-                    <div class="question-wrapper">
+                    <div class="question-wrapper read">
                         <div class="question-content">
                             <div class="user">
-                                <img src="/assets/Avatar.svg" alt="">
+                                <img src="/assets/userintern.svg" alt="">
                             </div>
                             <div class="question">
                                 <p>O que é script?</p>
                             </div>
                         </div>
                         <div class="actions">
-                            <a class="check" href="">
-                                <img src="/assets/check.svg" alt="">
-                                Marcar como lida
-                            </a>
+                            
                             <a class="trash" href="">
                                 <img src="/assets/trash.svg" alt="">
                                 Excluir
@@ -138,4 +136,24 @@
 
        
     </div>  
+
+    <!----- MODAL ----->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Excluir</h2>
+            <p>Tem certeza que você deseja excluir essa pergunta?</p>
+
+            <form action="">
+                <label class="sr-only" for="password"></label>
+                <input type="password" name="password" placeholder="Digite sua senha" id="password">
+
+                <div class="buttons">
+                    <div class="button grey">Cancelar</div>
+                    <button class="red">Sim, excluir</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>    
 </html>
