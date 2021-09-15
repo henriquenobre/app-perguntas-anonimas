@@ -82,7 +82,8 @@ button:hover, .button:hover{
 }
 
 button > a > img, 
-.button > img{
+.button > img,
+button img{
     margin-right: 1rem;
     width: 2rem;
 }
