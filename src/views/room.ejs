@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas</title>
+ 
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/room.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    <!--Fontes  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <!-- SCRIPT -->
+    <script src="scripts/main.js" defer type="module"></script>
+
+</head>
+<body>
+    <div id="room" class="content">
+
+        <header>
+            <a href="index.ejs">
+                <img src="/images/Logo.svg" alt="logo">
+            </a>
+
+            <div class="buttons">
+                <div class="button outlined" id="room-id" data-id="323243">
+                    #323243
+                    <img src="/images/key.svg" alt="Copiar numero da sala">
+                </div>
+
+                <a class="button" href="">
+                    <img src="/images/userswhite.svg" alt="Criar sala">
+                    Criar sala
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section id="question-form">
+                <h2>Faça sua pergunta</h2>
+                <form action="">
+                    <label class="sr-only" for="question">O que você quer perguntar</label>
+                    <textarea name="" placeholder="O que você quer perguntar" id="question" cols="69"></textarea>
+
+                    <footer>
+                        <div>
+                            <img src="/images/lockblack.svg" alt="">
+                            Esta pergunta é anônima
+                        </div>
+                        <button>Enviar</button>
+                    </footer>
+                </form>
+            </section>
+
+            <section id="questions">
+                <h2 class="sr-only">Perguntas relaizadas</h2>
+
+                <div class="questions">
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="/images/userintern.svg" alt="">
+                            </div>
+                            <div class="question">
+                                <p>Qual a diferença entre const let e var js?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a class="check" data-id="2">
+                                <img src="/images/check.svg" alt="">
+                                Marcar como lida
+                            </a>
+                            <a class="trash" data-id="2">
+                                <img src="/images/trash.svg" alt="">
+                                Excluir
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="/images/userintern.svg" alt="">
+                            </div>
+                            <div class="question">
+                                <p>QO que Java script?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a class="check" data-id="3">
+                                <img src="/images/check.svg" alt="">
+                                Marcar como lida
+                            </a>
+                            <a class="trash" data-id="3">
+                                <img src="/images/trash.svg" alt="">
+                                Excluir
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="/images/userintern.svg" alt="">
+                            </div>
+                            <div class="question">
+                                <p>O que é script?</p>
+                            </div>
+                        </div>
+                        <div class="actions" data-id="1">
+                            
+                            <a class="trash" data-id="1">
+                                <img src="/images/trash.svg" alt="">
+                                Excluir
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+       
+    </div>  
+
+    <!----- MODAL ----->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Excluir</h2>
+            <p>Tem certeza que você deseja excluir essa pergunta?</p>
+
+            <form action="#" method="POST">
+                <label class="sr-only" for="password"></label>
+                <input type="password" name="password" placeholder="Digite sua senha" id="password">
+
+                <div class="buttons">
+                    <div class="button grey cancel">Cancelar</div>
+                    <button class="red">Sim, excluir</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>    
+</html>
