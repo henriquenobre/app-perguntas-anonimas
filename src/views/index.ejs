@@ -25,7 +25,9 @@
     <div id="home" class="content">
 
         <header>
+            <a href="/">
             <img src="/images/Logo.svg" alt="logo">
+            </a>
         </header>
 
         <div id="bg">
@@ -37,9 +39,9 @@
          <div class="container">
            <section>
                <h2>Entre como participante</h2>
-               <form action="">
+               <form action="/enterroom" method="POST">
                    <label class="sr-only" for="room-id">Código da sala</label>
-                   <input type="number" name="" id="room-id" placeholder="Código da sala">
+                   <input name="roomId" type="number" name="" id="room-id" placeholder="Código da sala">
                    <button>
                         <a href="/room.ejs">
                             <img src="/images/login-room.svg" alt="Entrar sala"> 

@@ -25,8 +25,8 @@
     <div id="home" class="content">
 
         <header>
-            <a href="index.ejs">
-                <img src="images/Logo.svg" alt="logo">
+            <a href="/">
+                <img src="/images/Logo.svg" alt="logo">
             </a>
         </header>
 
@@ -39,9 +39,9 @@
          <div class="container">
            <section>
                <h2>Crie sua própria sala</h2>
-               <form action="/room/create-room">
+               <form action="/create-room" method="POST">
                    <label class="sr-only" for="room-id">Isira uma senha</label>
-                   <input type="number" name="" id="room-id" placeholder="Código da sala">
+                   <input type="password" name="password" id="room-id" placeholder="Código da sala">
                    <button><img src="images/userswhite.svg" alt="Entrar sala"> Criar sala</button>
                </form>
            </section>
